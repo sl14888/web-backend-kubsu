@@ -2,12 +2,12 @@
 
 class DB
 {
-    protected PDO $pdo;
+    protected $pdo;
 
     public function __construct() {
         $user = 'u41802';
         $pass = '4104631';
-        $this->pdo = new PDO('mysql:host=localhost;dbname=kubsu_backend', $user, $pass);
+        $this->pdo = new PDO('mysql:host=localhost;dbname=web-backend-kubsu', $user, $pass);
         echo $this->pdo->errorCode();
     }
 
