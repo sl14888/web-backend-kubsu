@@ -8,7 +8,7 @@
 
         public $id;
 
-        public function __construct(protected string $login, protected string $password) {
+        public function __construct($login, $password) {
             parent::__construct();
         }
 
