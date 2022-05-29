@@ -2,13 +2,13 @@
 
 class Validator
 {
-    protected bool $fails = false;
+    protected $fails = false;
 
-    protected array $rules = [
+    protected $rules = [
         'email' => 'email',
     ];
 
-    protected array $messages = [
+    protected $messages = [
         'count_hands' => 'Количество конечностей',
         'birthday' => 'Дата рождения',
         'sex' => 'Пол',
