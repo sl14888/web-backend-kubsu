@@ -31,7 +31,7 @@
             return $this->pdo->query('select id from request order by id desc')->fetch()[0];
         }
 
-        public function getSuperpowers(): bool|array {
+        public function getSuperpowers() {
             return $this->pdo->query('select * from superpowers')->fetchAll();
         }
     }
