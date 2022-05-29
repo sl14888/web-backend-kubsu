@@ -7,7 +7,7 @@ class DB
     public function __construct() {
         $user = 'u41802';
         $pass = '4104631';
-        $this->pdo = new PDO('mysql:host=localhost;dbname=web-backend-kubsu', $user, $pass);
+        $this->pdo = new PDO('mysql:host=localhost;dbname=u41802', $user, $pass);
         echo $this->pdo->errorCode();
     }
     public function insert(array $values, string $table): bool {
