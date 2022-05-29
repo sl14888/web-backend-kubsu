@@ -20,7 +20,7 @@
 ?>
 
 <?php require_once __DIR__ . '/layouts/header.php'?>
-<a href="/admin.php" class="btn btn-outline-danger m-3">
+<a href="web-backend-kubsu/web6/admin.php" class="btn btn-outline-danger m-3">
   Войти как администратор
 </a>
 
