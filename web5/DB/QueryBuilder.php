@@ -9,7 +9,7 @@
         protected $table;
 
         public function __construct() {
-            $user = '41802';
+            $user = 'u41802';
             $pass = '4104631';
             $this->pdo = new PDO('mysql:host=localhost;dbname=u41802', $user, $pass);
             $this->query = '';
