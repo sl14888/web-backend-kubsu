@@ -9,9 +9,9 @@
         protected $table;
 
         public function __construct() {
-            $user = 'homestead';
-            $pass = 'secret';
-            $this->pdo = new PDO('mysql:host=localhost;dbname=kubsu_backend_5', $user, $pass);
+            $user = '41802';
+            $pass = '4104631';
+            $this->pdo = new PDO('mysql:host=localhost;dbname=u41802', $user, $pass);
             $this->query = '';
         }
 
