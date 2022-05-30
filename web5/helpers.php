@@ -62,7 +62,7 @@
             $rand = rand(1, 1000);
             $login = "login" . $rand . "@example.com";
             $rawPassword = "password$rand";
-            $password = password_hash($rawPassword, null);
+            $password = password_hash($rawPassword, PASSWORD_DEFAULT);
             $user = new User($login, $password);
             $user->create();
             $user->rawPassword = $rawPassword;
