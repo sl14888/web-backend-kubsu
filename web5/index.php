@@ -11,7 +11,7 @@
     $db = new DB();
     $validator = new Validator();
 
-    isAuthenticated() ?
+    isAuthenticated() && !empty($_POST['check']) ?
         updateRequest(params()) :
         createRequest($db, $validator, params());
 
