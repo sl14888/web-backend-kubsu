@@ -91,7 +91,7 @@ public static function showOldInput(string $key) {
                     ->fetchObject();
                 echo $request->$key;
             }
-} catch (\Exception) {
+} catch (\Exception $e) {
             echo '';
             }
         }
