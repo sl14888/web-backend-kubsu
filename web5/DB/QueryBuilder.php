@@ -42,7 +42,7 @@
             return $this;
         }
 
-        public function where(string $name, mixed $value): self {
+        public function where(string $name, $value): self {
             $this->query .= " where $name = '$value'";
             return $this;
         }
