@@ -1,6 +1,6 @@
 <div class="mt-5 row">
   <p class="h3">Войти</p>
-  <form action="/" method="post">
+  <form method="post">
     <label>
       Логин
       <input class="form-control" type="text" name="login">
