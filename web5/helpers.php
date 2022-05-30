@@ -71,7 +71,7 @@
 
             $db->insert($params, 'request');
 
-            $id = $db->maxRequestId();
+            $id = $db->maxRequestId() ?? '1';
 
             if (isset($_POST['superpowers'])) {
                 foreach ($_POST['superpowers'] as $superpowerId) {
