@@ -83,14 +83,15 @@
             return !empty($_COOKIE["success"][$key]);
         }
 
-        public static function showOldInput(string $key) {
+public static function showOldInput(string $key) {
+           try {
             if (!empty($_SESSION['auth']) && !empty($_SESSION['user'])) {
                 $request = QueryBuilder::getPdo()
                     ->query('select * from request where user_id = ' . $_SESSION['user']->id)
                     ->fetchObject();
                 echo $request->$key;
             }
-
+} catch (\Exception) {
             echo '';
         }
-    }
+}
