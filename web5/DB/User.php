@@ -5,11 +5,17 @@
     class User extends QueryBuilder
     {
         public $rawPassword;
+        
+        public $login;
+            
+        public $password;
 
         public $id;
 
         public function __construct($login, $password) {
             parent::__construct();
+            $this->login=$login;
+            $this->password=$password;
         }
 
         public function create() {
