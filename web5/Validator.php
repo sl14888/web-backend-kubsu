@@ -93,5 +93,6 @@ public static function showOldInput(string $key) {
             }
 } catch (\Exception) {
             echo '';
+            }
         }
-}
+    }
